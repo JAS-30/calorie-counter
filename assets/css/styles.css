@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../images/bg-js-project.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+}
+.left-side{
+    width: 45%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15vh;
+    gap: 150px;
+    border-right: 3px solid #fff;
+}
+.left-side h1{
+    color: #fff;
+    font-size: 48px;
+}
+span{
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    color: #50C878;
+    font-size: 22px;
+    font-weight: 700;
+    z-index: 1;
+}
+.left-element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-side{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15vh;
+    gap: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.circular-progress{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.circular-progress::before{
+    content: "";
+   position: absolute;
+    height: calc(250px * 0.84);
+    width: calc(250px * 0.84);
+    background-color: #fff;
+    border-radius: 50%;
+    }
+.circular-progress p{
+color: #50C878;
+font-size: 20px;
+font-weight: 600;
+z-index: 1;
+}
+
+.buttons{
+  
+    display: flex;
+    gap: 40px;
+    align-items: center;
+   
+}
+button{
+    width: 90px;
+    height: 90px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input{
+    width: 50%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px 0 10px 10px;
+    font-size: 16px;
+}
+input::placeholder{
+    color: #fff;
+}
+#add:hover{
+    color: #00FF7F;
+    border-color: #00FF7F;
+}
+#remove:hover{
+    color: #FF0000;
+    border-color: #FF0000;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   
+    .left-side{
+        
+        gap: 100px;
+        border-right: 2px solid #fff;
+    }
+    .left-side h1{
+        color: #fff;
+        font-size: 28px;
+    }
+    span{
+        padding: 5px;
+        width: 80px;
+        border: 2px solid #fff;
+        font-size: 18px;
+    }
+    .left-element{
+        gap: 10px;
+    }
+    
+    .right-side{
+        gap: 30px;
+    }
+    .circular-progress{
+        height: 150px;
+        width: 150px;
+        gap: 10px;
+    }
+    .circular-progress::before{
+        height: calc(150px * 0.84);
+        width: calc(150px * 0.84);
+        }
+    .circular-progress p{
+    font-size: 18px;
+    }
+    
+    .buttons{
+        gap: 20px;
+    }
+    button{
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    
+    input{
+        width: 60%;
+        border-radius: 8px;
+        outline: none;
+        padding: 5px 0 5px 5px;
+        font-size: 12px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   
+    .left-side{
+        gap: 100px;
+    }
+    .left-side h1{
+        color: #fff;
+        font-size: 38px;
+    }
+    .left-element{
+        gap: 20px;
+    }
+    
+    .right-side{
+        gap: 30px;
+    }
+   
+    
+    .buttons{
+        gap: 30px;
+    }
+    button{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+    }
+    
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .left-side{
+        gap: 250px;
+    }
+    .right-side{
+        gap: 80px;
+        padding-top: 5vh;
+    }
+    .circular-progress{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        gap: 15px;
+    }
+    .circular-progress::before{
+        height: calc(300px * 0.84);
+        width: calc(300px * 0.84);
+        border-radius: 50%;
+        } 
+    
+}
+
+
+
